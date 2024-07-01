@@ -53,8 +53,29 @@ char **readLineCSV(FILE *archivo, char separador) {
 // Función para limpiar la pantalla
 void limpiarPantalla() { system("clear"); }
 
-void presioneTeclaParaContinuar() {
+void presioneTeclaParaContinuar(int cond) {
   puts("Presione una tecla para continuar...");
-  getchar(); // Consume el '\n' del buffer de entrada
+  if (cond != 1)
+  {
+    getchar();
+  }
+  getchar(); // Espera a que el usuario presione una tecla
+}
+
+void verRespuesta(int cond) {
+  puts("Mostrar respuesta...");
+  if (cond != 1)
+  {
+    getchar();
+  }
+  getchar(); // Espera a que el usuario presione una tecla
+}
+
+void sigPregunta(int cond) {
+  puts("Siguiente pregunta...");
+  if (cond != 1)
+  {
+    getchar();
+  }
   getchar(); // Espera a que el usuario presione una tecla
 }

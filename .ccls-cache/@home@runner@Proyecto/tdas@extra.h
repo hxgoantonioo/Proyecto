@@ -41,6 +41,8 @@ char **leer_linea_csv(FILE *archivo, char separador);
 // Función para limpiar la pantalla
 void limpiarPantalla();
 
-void presioneTeclaParaContinuar();
+void presioneTeclaParaContinuar(int cond);
+void verRespuesta(int cond);
+void sigPregunta(int cond);
 
 #endif
